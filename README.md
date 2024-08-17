@@ -52,17 +52,20 @@ Clone the repository:
 
 git clone https://github.com/birukmaru/portfolio.git
 
-Navigate to the project directory:
+## Navigate to the project directory:
 cd portfolio
-Install dependencies:
+## Install dependencies:
 npm install
-Start the development server:
+## Start the development server:
 npm run dev
+
 Open your browser and go to http://localhost:3000
 
 # Contact
 Feel free to reach out to me for any inquiries, collaborations, or just to say hello!
 
 Email: birukmaru12@gmail.com
+
 LinkedIn: linkedin.com/in/biruk-maru-55974a256/
+
 GitHub: github.com/birukmaru/

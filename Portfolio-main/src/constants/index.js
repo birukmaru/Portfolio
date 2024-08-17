@@ -162,7 +162,7 @@ const projects = [
     ],
     image: komikult,
     repo: "https://github.com/birukmaru/ChatApp_Flutter_Firebase",
-    demo: "https://shaqdeff.github.io/KomiKult/",
+    // demo: "https://shaqdeff.github.io/KomiKult/",
   },
   {
     id: "project-2",
@@ -185,7 +185,7 @@ const projects = [
     ],
     image: leaderboard,
     repo: "https://github.com/birukmaru/react-order-pizza-website",
-    demo: "https://shaqdeff.github.io/Leaderboard/",
+    // demo: "https://shaqdeff.github.io/Leaderboard/",
   },
   {
     id: "project-3",
@@ -208,7 +208,7 @@ const projects = [
     ],
     image: math,
     repo: "https://github.com/Teklez/flutter_riverpod",
-    demo: "https://inspiring-medovik-37d3b3.netlify.app/",
+    // demo: "https://inspiring-medovik-37d3b3.netlify.app/",
   },
   {
     id: "project-4",
@@ -230,7 +230,7 @@ const projects = [
     ],
     image: movie,
     repo: "https://github.com/birukmaru/Book-Store-using-MERN",
-    demo: "https://movie-metro.netlify.app/",
+    // demo: "https://movie-metro.netlify.app/",
   },
   {
     id: "project-5",
@@ -253,7 +253,7 @@ const projects = [
     ],
     image: nyeusi,
     repo: "https://github.com/birukmaru/Translator_Flutter",
-    demo: "https://shaqdeff.github.io/Nyeusi-Fest-Site/",
+    // demo: "https://shaqdeff.github.io/Nyeusi-Fest-Site/",
   },
 ];
 

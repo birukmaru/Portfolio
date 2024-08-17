@@ -82,7 +82,7 @@ const ProjectCard = ({
             >
               {description}
             </p>
-            <button
+            {/* <button
               className="live-demo flex justify-between 
               sm:text-[16px] text-[14px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-2 pr-3 
@@ -110,7 +110,7 @@ const ProjectCard = ({
                   w-[30px] h-[30px] object-contain"
               />
               LIVE DEMO
-            </button>
+            </button> */}
           </div>
         </>
       )}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-2 fixed 
-      top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}
+      top-0 z-20 bg-flashWhite opacity-[0.99] xxs:h-[12vh]`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -22,14 +22,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* if you have text you want besides your logo it comes here.
-          Otherwise delete this if you don't need it. */}
           <img
             src={logotext}
             alt="logo"
             className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
           />
         </Link>
+
+        {/* Desktop Navigation */}
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
           {navLinks.map((nav) => (
             <li
@@ -45,12 +45,13 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
+        {/* Mobile Navigation */}
+        <div className="sm:hidden flex justify-end items-center">
+          {/* Toggle Menu Icon */}
           {toggle ? (
             <div
-              className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
+              className={`p-20 bg-gray-400 opacity-[0.98] absolute 
+                top-0 left-10 w-screen h-[80vh] z-10 menu ${
                   toggle ? "menu-open" : "menu-close"
                 }`}
             >
@@ -63,23 +64,32 @@ const Navbar = () => {
                 />
               </div>
               <ul
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]"
+                className="list-none flex flex-col items-start 
+                justify-end my-0 p-[0px] "
               >
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
                     key={nav.id}
                     className={`${
-                      active === nav.title ? "text-french" : "text-eerieBlack"
-                    } text-[88px] font-bold font-arenq 
+                      active === nav.title ? "" : "text-eerieBlack"
+                    }  <span
+                className="sm:text-battleGray sm:text-[90px] 
+                text-eerieBlack text-[50px] font-mova
+                font-extrabold uppercase"
+              >
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
+                      setToggle(false); // Close menu on link click
+                      setActive(nav.title); // Set the active link
                     }}
                   >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    <a
+                      className="text-[30px] mx-5 my-0 py-0 px-0"
+                      href={`#${nav.id}`}
+                    >
+                      {nav.title}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -89,7 +99,7 @@ const Navbar = () => {
               src={menu}
               alt="menu"
               className="w-[34px] h-[34px] object-contain cursor-pointer"
-              onClick={() => setToggle(!toggle)}
+              onClick={() => setToggle(true)}
             />
           )}
         </div>

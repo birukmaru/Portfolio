@@ -60,35 +60,35 @@ const services = [
 ];
 
 const technologies = [
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
+
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
-    name: "HTML 5",
-    icon: html,
+    name: "React JS",
+    icon: reactjs,
   },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-
   {
     name: "Node JS",
     icon: nodejs,
@@ -106,10 +106,10 @@ const technologies = [
     name: "Flutter",
     icon: flutter,
   },
-  {
-    name: "git",
-    icon: git,
-  },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
   {
     name: "figma",
     icon: figma,
@@ -207,7 +207,7 @@ const projects = [
       },
     ],
     image: math,
-    repo: "https://github.com/Teklez/flutter_riverpod",
+    repo: "https://github.com/Teklez/flutter_riverpod/tree/final_riverpod",
     // demo: "https://inspiring-medovik-37d3b3.netlify.app/",
   },
   {
